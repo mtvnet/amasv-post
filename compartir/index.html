@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#1c8694" />
-    <title>A+V</title>
+    <title>A+V | Comercial Compartido</title>
+
+    <link rel="apple-touch-icon" href="http://home.amasv.com/corporativo/wp-content/themes/amasv/img/favicon_ios.png">
+    <link href="http://home.amasv.com/corporativo/wp-content/themes/amasv/img/favicon.png" rel="shortcut icon">
 
     <link rel="stylesheet" href="../src/css/bootstrap.min.css">
     <link rel="stylesheet" href="../src/css/main.css">
@@ -33,7 +36,7 @@
     </header>
 
     <!-- acuse recibo -->
-    <section class="acuse">
+    <!--section class="acuse">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-8 text-center text-md-left sender">
@@ -45,10 +48,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section-->
     
     <!-- quien envia y boton descarga -->
-    <section class="first-section">
+    <section class="first-section visible">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-8 text-center text-md-left sender">
@@ -76,151 +79,185 @@
             </div>
         </div>
     </section>
+    <!-- resumen player info -->
+    <section>
+        <div class="container resumen-player">
+            <div class="row">
+                <div class="col-8 d-flex align-content-stretch flex-wrap full-to-border">
+                    <div><img src="../src/img/spot.svg" alt="Comercial" class="img-fluid"></div>
+                    <div><img src="../src/img/hd.svg" alt="HD" class="img-fluid"></div>
+                    <div><img src="../src/img/qc_green.svg" alt="QC OK" class="img-fluid"></div>
+                    <div><img src="../src/img/cc.svg" alt="Close Captions" class="img-fluid"></div>
+                    <div><img src="../src/img/ls.svg" alt="Lenguaje de Señas" class="img-fluid"></div>
+                    <div><img src="../src/img/ad.svg" alt="Audio Descriptions" class="img-fluid"></div>
+                    <div><img src="../src/img/sap.svg" alt="Tecla SAP" class="img-fluid"></div>
+                </div>
+                <div class="col-4 full-to-border text-right pd-rgt">
+                    <strong>Duración:</strong> 00:00:35:00
+                </div>
+            </div>
+            <div class="row">
+                <div class="col title-resumen full-to-border">
+                    <h5>UniAdapt_Rexona_Murad_Y2_35H_REXMUR_054_CR_035H</h5>
+                </div>
+            </div>
+        </div>
+    </section>
     
     <!-- Acordeon collapsables informacion, QC, Story -->
     <section class="info container">
         <div id="accordion" role="tablist" class="panel-md-box">
-            <div class="card c-first">
+            <!-- Mensaje -->
+            <div class="card c-first card-msje">
+                <div class="card-header" role="tab" id="headingZero">
+                    <h5 class="mb-0">
+                        <a data-toggle="collapse" href="#collapseZero" aria-expanded="true" aria-controls="collapseZero">Mensaje de <span>SOPORTE A+V</span></a>
+                    </h5>
+                </div>
+                <div id="collapseZero" class="collapse show" role="tabpanel" aria-labelledby="headingZero" data-parent="#accordion">
+                    <div class="card-body">
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores nam eos excepturi quo. Deserunt quas et, animi numquam perspiciatis adipisci beatae blanditiis eaque assumenda fuga quis enim doloremque voluptas!</p>
+                       <a href="#" class="btn btn-link btn-sm btn-adjunto">Descargar Archivo Adjunto</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Info Metadata -->
+            <div class="card">
                 <div class="card-header" role="tab" id="headingOne">
                     <h5 class="mb-0">
                         <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Información</a>
                     </h5>
                 </div>
                 <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-                    <!-- Metadata info -->
-                    <div class="card-body">
+                    <div class="card-body grey-w">
                             <div class="info-metadata">
-                                <div class="container">
-                                    <div class="info-group">
+                                <div class="container d-flex align-content-stretch flex-wrap">
+                                    <div class="info-group col-lg-6 col-sm-12">
                                         <label>Pieza</label>
                                         <span name="pieza">UniAdapt_Rexona_Murad_Y2_35H_REXMUR_054_CR_035H</span>
                                     </div>
                         
-                                    <div class="info-group">
+                                    <div class="info-group col-lg-6 col-sm-12">
                                         <label>Formato</label>
                                         <span name="codec_nombre">HD</span>
                                     </div>
                                         
-                                    <div class="info-group">
+                                    <div class="info-group col-lg-6 col-sm-12">
                                         <label>Norma</label>
                                         <span name="framerate">NTSC</span>
                                     </div>
                         
-                                    <div class="info-group">
+                                    <div class="info-group col-lg-6 col-sm-12">
                                         <label>Duración declarada</label>
                                         <span name="duracion_timecode">00:00:35;00</span>
                                     </div>
                         
-                                    <div class="info-group" style="display: none">
+                                    <div class="info-group col-lg-6 col-sm-12" style="display: none">
                                         <label>Claqueta</label>
                                         <span name="posinicio"></span>
                                     </div>
                                         
-                                    <div class="info-group" style="display: none">
+                                    <div class="info-group col-lg-6 col-sm-12" style="display: none">
                                         <label>Duración medida</label>
                                         <span name="qc_duracion_timecode">00:00:35;00</span>
                                     </div>
                         
-                                    <hr>
                         
-                                    <div class="info-group">
+                                    <div class="info-group col-lg-6 col-sm-12">
                                         <label>Código Industria</label>
                                         <span name="codigo_megatime">660105</span>
                                     </div>
                                     
-                                    <div class="info-group" style="display: none">
+                                    <div class="info-group col-lg-6 col-sm-12" style="display: none">
                                         <label>Tipo de Código</label>
                                         <span name="tipo_crt"></span>
                                     </div>
                         
-                                    <div class="info-group">
+                                    <div class="info-group col-lg-6 col-sm-12">
                                         <label>Código Agencia</label>
                                         <span name="cod_agencia_creativa">REXMUR_054_CR_035H</span>
                                     </div>
                         
-                                    <hr>
                         
-                                    <div class="info-group" style="display: none">
+                                    <div class="info-group col-lg-6 col-sm-12" style="display: none">
                                         <label>Anunciante extranjero</label>         
                                         <span name="avisador_extranjero_value">No</span>
                                     </div>
                                     
-                                    <div class="info-group">
+                                    <div class="info-group col-lg-6 col-sm-12">
                                         <label>Anunciante</label>
                                         <span name="avisador_nombre">Unilever Costa Rica</span>
                                     </div>
                                     
-                                    <div class="info-group" style="display: none">
+                                    <div class="info-group col-lg-6 col-sm-12" style="display: none">
                                         <label>CNPJ Anunciante</label>
                                         <span name="cnpj_avisador"></span>
                                     </div>
                         
-                                    <div class="info-group">
+                                    <div class="info-group col-lg-6 col-sm-12">
                                         <label>Marca</label>
                                         <span name="marca_nombre">REXONA</span>
                                     </div>
                         
-                                    <div class="info-group">
+                                    <div class="info-group col-lg-6 col-sm-12">
                                         <label>Producto</label>
                                         <span name="producto_nombre">REXONA FOR WOMAN</span>
                                     </div>
                         
-                                    <div class="info-group">
+                                    <div class="info-group col-lg-6 col-sm-12">
                                         <label>Campaña</label>
                                         <span name="campanya"></span>
                                     </div>
                         
-                                    <div class="info-group">
+                                    <div class="info-group col-lg-6 col-sm-12">
                                         <label>Referencia</label>
                                         <span name="tema"></span>
                                     </div>
                         
-                                    <hr>
                         
-                                    <div class="info-group" style="display: none">
+                                    <div class="info-group col-lg-6 col-sm-12" style="display: none">
                                         <label>Creativa extranjera</label>            
                                         <span name="creativa_extranjera_value">No</span>
                                     </div>
                                     
-                                    <div class="info-group">
+                                    <div class="info-group col-lg-6 col-sm-12">
                                         <label>Agencia Creativa</label>
                                         <span name="agencia_creativa_nombre">Unilever Creativa Costa Rica</span>
                                     </div>
                         
                                     
-                                    <div class="info-group" style="display: none">
+                                    <div class="info-group col-lg-6 col-sm-12" style="display: none">
                                         <label>CNPJ Creativa</label>
                                         <span name="cnpj_creativa"></span>
                                     </div>
                                     
-                                    <div class="info-group" >
+                                    <div class="info-group col-lg-6 col-sm-12" >
                                         <label>Agencia de Medios</label>
                                         <span name="agencia_medios_nombre">Otros</span>
                                     </div>
                         
-                                    <div class="info-group">
+                                    <div class="info-group col-lg-6 col-sm-12">
                                         <label>Fecha de producción</label>
                                         <span name="fecha_produccion"></span>
                                     </div>
                         
-                                    <div class="info-group">
+                                    <div class="info-group col-lg-6 col-sm-12">
                                         <label>Productora</label>
                                         <span name="productora_nombre"></span>
                                     </div>
                         
-                                    <div class="info-group">
+                                    <div class="info-group col-lg-6 col-sm-12">
                                         <label>Postproductora</label>
                                         <span name="postproductora_nombre">TAG Smoke &amp; Mirrors London CR</span>
                                     </div>
                         
-                                    <div class="info-group">
+                                    <div class="info-group col-lg-6 col-sm-12">
                                         <label>Director</label>
                                         <span name="director_nombre">Otro</span>
                                     </div>
                         
-                                    <hr>
                         
-                                    <div class="info-group" style="display: none">
+                                    <div class="info-group col-lg-6 col-sm-12" style="display: none">
                                         <label>Tipo de Material</label>             
                                         <span name="vineta_value"></span>
                                     </div>
@@ -230,47 +267,45 @@
                                         <span name="closedcaption_value"></span>
                                     </div>
                                     
-                                    <div class="info-group" style="display: none">
+                                    <div class="info-group col-lg-6 col-sm-12" style="display: none">
                                         <label>Audio</label>            
                                         <span name="audio_value"></span>
                                     </div>
                         
-                                    <div class="info-group" style="display: none">
+                                    <div class="info-group col-lg-6 col-sm-12" style="display: none">
                                         <label>Audio Description</label>          
                                         <span name="audiodescription_value">No</span>
                                     </div>
                         
-                                    <div class="info-group" style="display: none">
+                                    <div class="info-group col-lg-6 col-sm-12" style="display: none">
                                         <label>Tecla SAP</label>         
                                         <span name="teclasap_value"></span>
                                     </div>
                         
-                                    <div class="info-group" style="display: none">
+                                    <div class="info-group col-lg-6 col-sm-12" style="display: none">
                                         <label>Lenguaje Señas</label>          
                                         <span name="lenguajesenas_value"></span>
                                     </div>
                                     
-                                    <hr style="display: none;">
                                     
-                                    <div class="info-group" style="display: none">
+                                    <div class="info-group col-lg-6 col-sm-12" style="display: none">
                                         <label>Punto de venta</label>
                                         <span name="punto_venta_value"></span>
                                     </div>
                                     
                                     <div style="display: none">
-                                        <hr>
                         
-                                        <div class="info-group">
+                                        <div class="info-group col-lg-6 col-sm-12">
                                             <label>Mark in</label>
                                             <span id="player-settings-mark-in"></span>
                                         </div>
                         
-                                        <div class="info-group">
+                                        <div class="info-group col-lg-6 col-sm-12">
                                             <label>Mark out</label>
                                             <span id="player-settings-mark-out"></span>
                                         </div>
                         
-                                        <div class="info-group">
+                                        <div class="info-group col-lg-6 col-sm-12">
                                             <label>Mark in-out</label>
                                             <span id="player-settings-mark-inout"></span>
                                         </div>
@@ -288,94 +323,94 @@
                     </h5>
                 </div>
                 <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-                    <div class="card-body">
+                    <div class="card-body grey-w">
                             <div class="settings-metadata">
-                                    <div class="container">
-                                        <div class="info-group player-tooltip">
+                                    <div class="container d-flex align-content-stretch flex-wrap">
+                                        <div class="info-group col-lg-6 col-sm-12 player-tooltip">
                                             <label>Duración medida</label>
                                             <span>00:00:35;00 <i class="material-icons text-success">done</i></span>
                                         </div>
-                                        <div class="info-group player-tooltip">
+                                        <div class="info-group col-lg-6 col-sm-12 player-tooltip">
                                             <label>Extensión de video</label>
                                             <span>.mxf <i class="material-icons text-success">done</i></span>
                                         </div>
-                                        <div class="info-group player-tooltip">
+                                        <div class="info-group col-lg-6 col-sm-12 player-tooltip">
                                             <label>Contenedor de video</label>
                                             <span>OP-1a <i class="material-icons text-success">done</i></span>
                                         </div>
-                                        <div class="info-group player-tooltip">
+                                        <div class="info-group col-lg-6 col-sm-12 player-tooltip">
                                             <label>Códec de video</label>
                                             <span><button class="btn btn-link" data-toggle="popover" title="Códec de video" data-content="0D01030102046001-0401020201040300" data-placement="top">0D01030102...</button> <i class="material-icons text-success">done</i></span>
                                         </div>
-                                        <div class="info-group player-tooltip">
+                                        <div class="info-group col-lg-6 col-sm-12 player-tooltip">
                                             <label>Video bitrate</label>
                                             <span>50000000 <i class="material-icons text-warning">warning</i></span>
                                         </div>
-                                        <div class="info-group player-tooltip">
+                                        <div class="info-group col-lg-6 col-sm-12 player-tooltip">
                                             <label>Bit Rate Mode</label>
                                             <span>CBR <i class="material-icons text-danger">error</i></span>
                                         </div>
-                                        <div class="info-group player-tooltip">
+                                        <div class="info-group col-lg-6 col-sm-12 player-tooltip">
                                             <label>Framerate</label>
                                             <span>29.970 <i class="material-icons text-success">done</i></span>
                                         </div>
-                                        <div class="info-group player-tooltip">
+                                        <div class="info-group col-lg-6 col-sm-12 player-tooltip">
                                             <label>Colorimetry</label>
                                             <span>4:2:2 <i class="material-icons text-success">done</i></span>
                                         </div>
-                                        <div class="info-group player-tooltip">
+                                        <div class="info-group col-lg-6 col-sm-12 player-tooltip">
                                             <label>Resolución horizontal</label>
                                             <span>1920 <i class="material-icons text-success">done</i></span>
                                         </div>
-                                        <div class="info-group player-tooltip">
+                                        <div class="info-group col-lg-6 col-sm-12 player-tooltip">
                                             <label>Resolución vertical</label>
                                             <span>1080 <i class="material-icons text-success">done</i></span>
                                         </div>
-                                        <div class="info-group player-tooltip">
+                                        <div class="info-group col-lg-6 col-sm-12 player-tooltip">
                                             <label>Relación de aspecto del video</label>
                                             <span>1.778 <i class="material-icons text-success">done</i></span>
                                         </div>
-                                        <div class="info-group player-tooltip">
+                                        <div class="info-group col-lg-6 col-sm-12 player-tooltip">
                                             <label>Tipo de escaneo</label>
                                             <span>Interlaced <i class="material-icons text-success">done</i></span>
                                         </div>
-                                        <div class="info-group player-tooltip">
+                                        <div class="info-group col-lg-6 col-sm-12 player-tooltip">
                                             <label>Orden de escaneo</label>
                                             <span>TFF <i class="material-icons text-success">done</i></span>
                                         </div>
-                                        <div class="info-group player-tooltip">
+                                        <div class="info-group col-lg-6 col-sm-12 player-tooltip">
                                             <label>Canales de audio</label>
                                             <span>2 <i class="material-icons text-success">done</i></span>
                                         </div>
-                                        <div class="info-group player-tooltip">
+                                        <div class="info-group col-lg-6 col-sm-12 player-tooltip">
                                             <label>Frecuencia de muestreo de audio</label>
                                             <span>48000 <i class="material-icons text-success">done</i></span>
                                         </div>
-                                        <div class="info-group player-tooltip">
+                                        <div class="info-group col-lg-6 col-sm-12 player-tooltip">
                                             <label>Formato de Audio</label>
                                             <span>PCM <i class="material-icons text-success">done</i></span>
                                         </div>
-                                        <div class="info-group player-tooltip">
+                                        <div class="info-group col-lg-6 col-sm-12 player-tooltip">
                                             <label>Resolucion de Audio</label>
                                             <span>24 <i class="material-icons text-success">done</i></span>
                                         </div>
-                                        <div class="info-group player-tooltip">
+                                        <div class="info-group col-lg-6 col-sm-12 player-tooltip">
                                             <label>Nivel de audio true peak canal 1</label>
                                             <span>-9.5 <i class="material-icons text-success">done</i></span>
                                         </div>
-                                        <div class="info-group player-tooltip">
+                                        <div class="info-group col-lg-6 col-sm-12 player-tooltip">
                                             <label>Nivel de audio true peak canal 2</label>
                                             <span>-9.3 <i class="material-icons text-success">done</i></span>
                                         </div>
-                                        <div class="info-group player-tooltip">
+                                        <div class="info-group col-lg-6 col-sm-12 player-tooltip">
                                             <label>Diferencia de nivel de audio entre canal 1 y 2</label>
                                             <span>0 <i class="material-icons text-success">done</i></span>
                                         </div>
-                                        <div class="info-group player-tooltip">
+                                        <div class="info-group col-lg-6 col-sm-12 player-tooltip">
                                             <label>Diferencia entre loudness y true peak canal 1</label>
                                             <span>14.5 <i class="material-icons text-success">done</i></span>
                                         </div>
-                                        <div class="info-group player-tooltip">
+                                        <div class="info-group col-lg-6 col-sm-12 player-tooltip">
                                             <label>Diferencia entre loudness y true peak canal 2</label>
                                             <span>14.7 <i class="material-icons text-success">done</i></span>
                                         </div>
@@ -562,11 +597,11 @@
         $(function () {
             $('[data-toggle="popover"]').popover()
         })
-        $('.btn-acuse').click(function(){
+        /*$('.btn-acuse').click(function(){
             $('.acuse').fadeOut(800);
             $('.first-section').fadeIn(800);
             $('.first-section').addClass('visible');
-        });
+        });*/
     </script>
     
 </body>
